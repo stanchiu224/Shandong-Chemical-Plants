@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandong Chemical Facilities Map - Data Visualization Sample</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <style>
+        /* Add simple body styling */
+        body {
+            font-family: sans-serif; /* Tailwind's default sans-serif stack */
+        }
+        /* Ensure Flourish embed is responsive */
+        .flourish-embed {
+            width: 100%;
+            height: 60vh; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800"> {/* Changed background */}
+
+    <img src="chemical_plant_banner.png" alt="Stylized illustration of chemical plant operations" class="w-full max-h-72 object-cover mb-8 shadow-md">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="mb-6 text-center">
+            {/* Changed heading color */}
+            <h1 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-2">Interactive Map: Shandong Chemical Facilities</h1>
+            <p class="text-lg text-gray-600">A Data Visualization Sample for Global Energy Monitor</p>
+        </header>
+
+        <div class="text-center mb-8 space-x-4">
+            {/* Changed button colors */}
+            <a href="S_Chiu_Resume_2025.pdf" target="_blank" class="inline-block bg-emerald-700 text-white px-4 py-2 rounded hover:bg-emerald-800 transition duration-300 text-sm font-medium">
+                View Resume (PDF)
+            </a>
+            <a href="https://www.linkedin.com/in/stanleychiu/" target="_blank" class="inline-block bg-emerald-800 text-white px-4 py-2 rounded hover:bg-emerald-900 transition duration-300 text-sm font-medium">
+                LinkedIn Profile
+            </a>
+        </div>
+
+        <section class="mb-10 bg-white p-6 rounded-lg shadow">
+             {/* Changed heading color */}
+            <h2 class="text-2xl font-semibold mb-4 text-emerald-900">Why This Visualization?</h2>
+            <p class="mb-4 text-gray-700">I created this interactive map visualization as a sample project to demonstrate qualities that make me an excellent fit for the Project Manager position at Global Energy Monitor (GEM):</p>
+            <ul class="list-none space-y-4 text-gray-700">
+                <li>
+                    <strong class="font-semibold text-emerald-800 block mb-1">1. Strategic Project Focus:</strong> Understanding that this role involves building a global chemical plant tracker similar to GEM's existing industry trackers, I focused on creating a map visualization backed by a database – GEM's core product format. The choice of Shandong province was strategic: it hosts the largest chemical sector within China, which in turn has the world's largest chemical industry. This demonstrates an ability to prioritize impactful work aligned with organizational goals.
+                </li>
+                <li>
+                    <strong class="font-semibold text-emerald-800 block mb-1">2. Relevant Regional Expertise:</strong> Focusing on facilities in China showcases my direct experience working in the region and my professional proficiency in the Chinese language, both valuable assets for global data collection and analysis.
+                </li>
+                <li>
+                    <strong class="font-semibold text-emerald-800 block mb-1">3. Technical Acumen & Scalability:</strong> Building this visualization involved using Python for data processing, leveraging APIs (Google Geocoding, Google Translate), and hosting the result online. This demonstrates technical skills relevant to managing data-intensive projects and an understanding of how technology can automate and scale work beyond manual capabilities.
+                </li>
+                 <li>
+                    <strong class="font-semibold text-emerald-800 block mb-1">4. Work Ethic & Continuous Improvement:</strong> This webpage detailing the methodology serves as a writing sample and reflects my professional approach. I maintain high standards for work products while constantly seeking efficiency and quality improvements. My background in environmental consulting and the chemical industry, combined with self-driven technical skill development, highlights my adaptability and commitment to leveraging new technologies for creating impactful, previously unfeasible work products.
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-10 bg-white p-6 rounded-lg shadow">
+             {/* Changed heading color */}
+            <h2 class="text-2xl font-semibold mb-4 text-emerald-900">The Map</h2>
+            <p class="mb-4 text-gray-700">This map displays the locations of approximately 200 chemical companies within Shandong Province, China. The size of the points may relate to registered capital, used here as a proxy for operational scale.</p>
+            <div class="flourish-embed flourish-map" data-src="visualisation/22502857">
+                <noscript>
+                    <p class="text-center text-red-600">Please enable JavaScript to view the interactive map.</p>
+                    <img src="https://public.flourish.studio/visualisation/22502857/thumbnail" width="100%" alt="Map visualization thumbnail" class="mx-auto border rounded"/>
+                </noscript>
+            </div>
+            <p class="mt-4 text-sm text-gray-500 text-center">Note: Map interactivity (zoom, pan, hover/click for details) requires JavaScript.</p>
+        </section>
+
+        <section class="mb-10 bg-white p-6 rounded-lg shadow">
+             {/* Changed heading color */}
+            <h2 class="text-2xl font-semibold mb-4 text-emerald-900">Methodology</h2>
+            <p class="mb-4 text-gray-700">This visualization was created as a sample project within a limited timeframe (approx. 4 hours) to demonstrate relevant skills. The process aimed for scalability for potential future work on mapping chemical facilities in China.</p>
+            <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                <li>
+                    <strong>Data Sourcing & Challenges:</strong> Initial research sought lists of chemical plants in Shandong, particularly focusing on energy consumption data (>10k tce). Accessing official Shandong government websites proved difficult, potentially due to IP address restrictions. Commercial datasets were identified but not purchased due to budget constraints for this sample project. A publicly available list of ~1500 Shandong chemical companies (including addresses and registered capital) was used as the primary data source, with registered capital serving as an imperfect proxy for operational size.
+                </li>
+                <li>
+                    <strong>Data Scoping:</strong> To manage processing time within the constraints, the list was narrowed down to a sample of 200 companies for location identification and name translation using free tools.
+                </li>
+                <li>
+                    <strong>Data Processing & Enhancement:</strong> A GitHub Codespace environment was used with Python scripts for data scraping (where applicable), processing, cleaning, and enhancement. Google Geocoding API was utilized to obtain latitude/longitude coordinates from Chinese addresses. Google Translate API was used to translate company names into English. The processed data was exported to a CSV file.
+                </li>
+                <li>
+                    <strong>Map Development:</strong> The Flourish platform was chosen for map creation due to its efficient handling of CSV data and map customization options. A map of China was adapted to focus specifically on Shandong Province. The processed CSV data was imported to plot the company locations.
+                </li>
+                <li>
+                    <strong>Documentation (This Page):</strong> This HTML page serves as documentation, outlining the process, tools, challenges, and potential refinements to ensure the methodology is understandable and potentially scalable for future work by colleagues.
+                </li>
+            </ol>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow">
+             {/* Changed heading color */}
+            <h2 class="text-2xl font-semibold mb-4 text-emerald-900">Potential Refinements & Next Steps</h2>
+            <p class="mb-4 text-gray-700">Given adequate time, budget, and resources (as would be available in an employment context), the following improvements could significantly enhance the dataset and visualization:</p>
+            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                <li>
+                    <strong>Add Main Products Data:</strong> Incorporating main products for each facility is crucial for understanding process types and potential energy intensity. This could potentially be automated using AI APIs (e.g., Perplexity API) to search and extract product information, followed by verification against web sources.
+                </li>
+                <li>
+                    <strong>Improve Geocoding Accuracy:</strong> Utilize Baidu Maps Geocoding API or other China-specific mapping services, as they generally offer higher accuracy for Chinese addresses compared to Google Maps API.
+                </li>
+                <li>
+                    <strong>Access Government Data:</strong> Employ a Chinese proxy server or VPN to potentially overcome IP restrictions and access official government databases or environmental disclosure platforms for more comprehensive and verified facility lists and energy consumption data.
+                </li>
+                <li>
+                    <strong>Acquire Commercial Datasets:</strong> Research and potentially purchase commercially available datasets focused on the Chinese chemical industry (identified options were under $100), which may offer more detailed and curated information than publicly available sources.
+                </li>
+            </ul>
+        </section>
+
+        <footer class="mt-10 text-center text-sm text-gray-500">
+            <p>Author: Stanley Chiu - April 2025</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
