@@ -14,8 +14,18 @@
         /* Ensure Flourish embed is responsive and adjust height */
         .flourish-embed {
             width: 100%;
-            height: 50vh; /* Reduced height from 60vh to prevent overlap */
+            height: 500px; /* Fixed height works better with Flourish */
+            max-height: 80vh; /* Limit maximum height */
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
         }
+       /* Add media query for smaller screens */
+       @media (max-width: 768px) {
+        .flourish-embed {
+            height: 400px;
+        }
+    }     
     </style>
 </head>
 <body class="bg-amber-50 text-gray-800">
@@ -46,7 +56,7 @@
                     <strong class="font-semibold text-emerald-800 block mb-1">1. Strategic Project Focus:</strong> Understanding that this role involves building a global chemical plant tracker similar to GEM's existing industry trackers, I focused on creating a map visualization backed by a database – GEM's core product format. The choice of Shandong province was strategic: it hosts the largest chemical sector within China, which in turn has the world's largest chemical industry. This demonstrates an ability to prioritize impactful work aligned with organizational goals.
                 </li>
                 <li>
-                    <strong class="font-semibold text-emerald-800 block mb-1">2. Relevant Regional Expertise:</strong> Focusing on facilities in China showcases my direct experience working in the region and my professional proficiency in the Chinese language, both valuable assets for global data collection and analysis. Having worked directly in the chemical industry in the US, I am also very familiar with available data sources for chemical plants in the world's second largest industry.
+                    <strong class="font-semibold text-emerald-800 block mb-1">2. Relevant Regional Expertise:</strong> Focusing on facilities in China showcases my direct experience working in the region and my professional proficiency in the Chinese language, both valuable assets for global data collection and analysis. Having worked directly in the chemical industry in the US, I am also very familiar with available data sources for chemical plants in the country with the world's second largest chemicals industry.
                 </li>
                 <li>
                     <strong class="font-semibold text-emerald-800 block mb-1">3. Technical Acumen & Scalability:</strong> Building this visualization involved using Python for data processing, leveraging APIs (Google Geocoding, Google Translate), and hosting the result online. This demonstrates technical skills relevant to managing data-intensive projects and an understanding of how technology can automate and scale work beyond manual capabilities.
@@ -60,13 +70,18 @@
         <section class="mb-10 bg-white p-6 rounded-lg shadow">
             <h2 class="text-2xl font-semibold mb-4 text-emerald-900">The Map</h2>
             <p class="mb-4 text-gray-700">This map displays the locations of approximately 200 chemical companies within Shandong Province, China. The size of the points relate to registered capital, used here as a proxy for operational scale.</p>
-            <div class="flourish-embed flourish-map" data-src="visualisation/22502857">
-                <noscript>
-                    <p class="text-center text-red-600">Please enable JavaScript to view the interactive map.</p>
-                    <img src="https://public.flourish.studio/visualisation/22502857/thumbnail" width="100%" alt="Map visualization thumbnail" class="mx-auto border rounded"/>
-                </noscript>             
+
+            <div class="relative">
+                <div class="flourish-embed flourish-map" data-src="visualisation/22502857" style="height: 500px; max-height: 70vh; width: 100%; position: relative; overflow: hidden; margin-bottom: 16px;">
+                    <noscript>
+                        <p class="text-center text-red-600">Please enable JavaScript to view the interactive map.</p>
+                        <img src="https://public.flourish.studio/visualisation/22502857/thumbnail" width="100%" alt="Map visualization thumbnail" class="mx-auto border rounded"/>
+                    </noscript>             
+                </div>
             </div>
+            
             <p class="mt-4 text-sm text-gray-500 text-center">Note: Map interactivity (zoom, pan, hover/click for details) requires JavaScript.</p>
+            
             <div class="mt-6 text-sm">
                 <p class="mb-1">
                     <a href="200_largest_chemical_plants.csv" download class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium">
