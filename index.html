@@ -50,26 +50,26 @@
 
         <section class="mb-10 bg-white p-6 rounded-lg shadow">
             <h2 class="text-2xl font-semibold mb-4 text-emerald-900">Why This Visualization?</h2>
-            <p class="mb-4 text-gray-700">I created this interactive map visualization as a sample project to demonstrate qualities that make me an excellent fit for the Project Manager, Chemicals position at Global Energy Monitor (GEM):</p>
+            <p class="mb-4 text-gray-700">I created this webpage as a sample project to showcase my qualifications and express my strong interest for the Project Manager, Chemicals position at Global Energy Monitor:</p>
             <ul class="list-none space-y-4 text-gray-700">
                 <li>
-                    <strong class="font-semibold text-emerald-800 block mb-1">1. Strategic Project Focus:</strong> Understanding that this role involves building a global chemical plant tracker similar to GEM's existing industry trackers, I focused on creating a map visualization backed by a database – GEM's core product format. The choice of Shandong province was strategic: it hosts the largest chemical sector within China, which in turn has the world's largest chemical industry. This demonstrates an ability to prioritize impactful work aligned with organizational goals.
+                    <strong class="font-semibold text-emerald-800 block mb-1">1. Strategic Project Focus:</strong> Understanding that this role involves building a global chemical plant tracker similar to GEM's existing industry trackers, I focused on creating a map backed by a database, GEM's core product format. The choice of Shandong province was strategic: it hosts the largest chemical sector within China, which in turn has the world's largest chemical industry. This demonstrates my ability to identify high priority work aligned with organizational goals.
                 </li>
                 <li>
-                    <strong class="font-semibold text-emerald-800 block mb-1">2. Relevant Regional Expertise:</strong> Focusing on facilities in China showcases my direct experience working in the region and my professional proficiency in the Chinese language, both valuable assets for global data collection and analysis. Having worked directly in the chemical industry in the US, I am also very familiar with available data sources for chemical plants in the country with the world's second largest chemicals industry.
+                    <strong class="font-semibold text-emerald-800 block mb-1">2. Relevant Regional Expertise:</strong> Focusing on facilities in China showcases my direct experience working in the country and my professional proficiency in Chinese, both valuable assets for global data collection and analysis. Having worked directly in the chemical industry in the US, I am also very familiar with available data sources for chemical plants in the country with the world's second largest chemicals industry.
                 </li>
                 <li>
-                    <strong class="font-semibold text-emerald-800 block mb-1">3. Technical Acumen & Scalability:</strong> Building this visualization involved using Python for data processing, leveraging APIs (Google Geocoding, Google Translate), and hosting the result online. This demonstrates technical skills relevant to managing data-intensive projects and an understanding of how technology can automate and scale work beyond manual capabilities.
+                    <strong class="font-semibold text-emerald-800 block mb-1">3. Technical Skills & Scalability:</strong> I used Python for data processing, integrated Google Geocoding and Translate APIs, and hosted the final map online. This demonstrates technical skills relevant to managing data-intensive projects and an understanding of how technology can automate and scale work beyond manual methods.
                 </li>
                  <li>
-                    <strong class="font-semibold text-emerald-800 block mb-1">4. Work Ethic & Continuous Improvement:</strong> This webpage detailing the methodology serves as a writing sample and reflects my professional approach. I maintain high standards for work products while constantly seeking efficiency and quality improvements. My background in environmental consulting and the chemical industry, combined with self-driven technical skill development, highlights my adaptability and commitment to leveraging new technologies for creating impactful, previously unfeasible work products.
+                    <strong class="font-semibold text-emerald-800 block mb-1">4. Work Ethic & Continuous Improvement:</strong> The methodology section of this page serves as a writing sample and reflects my professional approach. I have high standards for work products and constantly pursue efficiency and quality improvements. My background in environmental consulting and the chemical industry, combined with self-driven technical skill development, highlights my adaptability and commitment to using new technologies to work more effectively and efficiently.
                 </li>
             </ul>
         </section>
 
         <section class="mb-10 bg-white p-6 rounded-lg shadow">
             <h2 class="text-2xl font-semibold mb-4 text-emerald-900">The Map</h2>
-            <p class="mb-4 text-gray-700">This map displays the locations of approximately 200 chemical companies within Shandong Province, China. The size of the points relate to registered capital, used here as a proxy for operational scale.</p>
+            <p class="mb-4 text-gray-700">This map displays the locations of approximately 200 chemical companies in Shandong Province, China. The size of the points relate to registered capital, used here as a proxy for operational scale.</p>
 
             <div class="relative">
                 <div class="flourish-embed flourish-map" data-src="visualisation/22502857" style="height: 700px; min-height: 600px; width: 100%; position: relative; overflow: hidden; margin-bottom: 16px;">
@@ -99,41 +99,41 @@
 
         <section class="mb-10 bg-white p-6 rounded-lg shadow">
             <h2 class="text-2xl font-semibold mb-4 text-emerald-900">Methodology</h2>
-            <p class="mb-4 text-gray-700">This visualization was created as a sample project to demonstrate relevant skills. The process aimed for scalability for potential future work on mapping chemical facilities in China.</p>
+            <p class="mb-4 text-gray-700">This visualization was created as a sample project to highlight relevant skills. The process aimed for scalability for potential future work on mapping chemical facilities in China.</p>
             <ol class="list-decimal list-inside space-y-3 text-gray-700">
                 <li>
-                    <strong>Data Sourcing & Challenges:</strong> Initial research sought lists of chemical plants in Shandong, particularly focusing on energy consumption data (>10k tce). Accessing official Shandong government websites proved difficult, potentially due to IP address restrictions. Commercial datasets were identified but not purchased due to budget constraints for this sample project. A publicly available list of ~1500 Shandong chemical companies (including addresses and registered capital) was used as the primary data source, with registered capital serving as an imperfect proxy for operational size.
+                    <strong>Data Sourcing & Challenges:</strong> I began by researching lists of chemical plants in Shandong, aiming to find facilities that were classified as "key energy consumption units". However, I was unable to access most of the relevant Shandong government websites, potentially due to foreign IP address restrictions. I found potential commercial datasets, but did not purchase them due to budget constraints for this sample project. A publicly available list of ~1500 Shandong chemical companies (including addresses and registered capital) was used as the primary data source, with registered capital serving as a proxy for operational size.
                 </li>
                 <li>
-                    <strong>Data Scoping:</strong> To manage processing time within the constraints, the list was narrowed down to a sample of 200 companies for location identification and name translation using free tools.
+                    <strong>Data Scoping:</strong> To manage processing time within technical constraints, I narrowed the list to the largest 200 companies by registered capital for geocoding and name translation using free tools.
                 </li>
                 <li>
-                    <strong>Data Processing & Enhancement:</strong> A GitHub Codespace environment was used with Python scripts for data scraping (where applicable), processing, cleaning, and enhancement. Google Geocoding API was utilized to obtain latitude/longitude coordinates from Chinese addresses. Google Translate API was used to translate company names into English. The processed data was exported to a CSV file.
+                    <strong>Data Processing & Enhancement:</strong> I made Python scripts to scrape data from the primary source website, and then processed, cleaned, and enriched the data. Google Geocoding API was used to obtain latitude/longitude coordinates from Chinese addresses. The Google Translate API was used to translate company names into English. The processed data was exported to a CSV file, which served as the data source for the Flourish map.
                 </li>
                 <li>
-                    <strong>Map Development:</strong> The Flourish platform was chosen for map creation due to its efficient handling of CSV data and map customization options. A map of China was adapted to focus specifically on Shandong Province. The processed CSV data was imported to plot the company information.
+                    <strong>Map Development:</strong> I chose to use Flourish to create the map due to its map customization options and ease of use. I adapted a map of China to focus specifically on Shandong Province. Lastly, I uploaded the CSV data to Flourish to plot company.
                 </li>
                 <li>
-                    <strong>Documentation (This Page):</strong> This HTML page serves as documentation, outlining the process, tools, challenges, and potential refinements to ensure the methodology is understandable and potentially scalable for future work by colleagues.
+                    <strong>Documentation (This Page):</strong> This webpage serves as documentation, outlining the process, tools, challenges, and potential refinements to ensure the methodology is understandable and potentially scalable for future work by colleagues.
                 </li>
             </ol>
         </section>
 
         <section class="bg-white p-6 rounded-lg shadow">
             <h2 class="text-2xl font-semibold mb-4 text-emerald-900">Potential Refinements & Next Steps</h2>
-            <p class="mb-4 text-gray-700">Given adequate time, budget, and resources (as would be available in an employment context), the following improvements could significantly enhance the dataset and visualization:</p>
+            <p class="mb-4 text-gray-700">With adequate time, budget, and resources, the following improvements could significantly enhance the dataset and visualization:</p>
             <ul class="list-disc list-inside space-y-3 text-gray-700">
                 <li>
-                    <strong>Add Main Products Data:</strong> Incorporating main products for each facility is crucial for understanding process types and potential energy intensity. This can be obtained from commercial datasets.
+                    <strong>Add Main Products Data:</strong> Incorporating main products for each facility is crucial for understanding process types and potential energy intensity of each facility. This can be obtained from commercial datasets.
                 </li>
                 <li>
-                    <strong>Improve Geocoding Accuracy:</strong> Utilize Baidu Maps Geocoding API or other China-specific mapping services, as they generally offer higher accuracy for Chinese addresses compared to Google Maps API.
+                    <strong>Improve Geocoding Accuracy:</strong> Use Baidu Maps Geocoding API or other China-specific mapping services, as they generally offer higher accuracy for Chinese addresses compared to Google Maps API.
                 </li>
                 <li>
-                    <strong>Access Government Data:</strong> Employ a Chinese proxy server or VPN to potentially overcome IP restrictions and access official government databases or environmental disclosure platforms for more comprehensive and verified facility lists.
+                    <strong>Access Government Data:</strong> Use a Chinese proxy server or VPN to avoid IP restrictions and access official government databases for more comprehensive and verified facility lists.
                 </li>
                 <li>
-                    <strong>Acquire Commercial Datasets:</strong> Research and potentially purchase commercially available datasets focused on the Chinese chemical industry (identified options were under $100), which may offer more detailed and curated information than publicly available sources.
+                    <strong>Acquire Commercial Datasets:</strong> Research and potentially purchase commercial datasets focused on the Chinese chemical industry (identified options were under $100), which offer more detailed information than publicly available sources.
                 </li>
             </ul>
         </section>
